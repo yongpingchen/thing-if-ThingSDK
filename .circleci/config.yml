@@ -18,6 +18,7 @@ jobs:
           command: |
             git submodule sync
             git submodule update --init
+            cd kii
             git submodule sync
             git submodule update --init
       - run:
