@@ -21,5 +21,7 @@ jobs:
             git submodule sync
             git submodule update --init
       - run:
-          name: Print the Current Time
-          command: date
+          name: test
+          command: |
+            make
+            cd tests/small_tests; make test
