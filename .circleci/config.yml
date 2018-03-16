@@ -26,3 +26,5 @@ jobs:
           command: |
             make
             cd tests/small_tests; make test
+      - store_artifacts:
+          path: doc
